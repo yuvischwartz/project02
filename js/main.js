@@ -13,9 +13,16 @@ $( document ).ready(function() {
             console.log('url the originak images in the results array are:', data.data[0].images.original.url);
 
             let html = "";
-
             
-
+            for(let img of data.data){
+                //console.log(img);
+                console.log(img.images.original.url);
+                let str = `<img src=${img.images.original.url} />`;
+                html = html + str;
+            }
+            
+            console.log(html);
+            $('#result').html(html);
 
         });
 

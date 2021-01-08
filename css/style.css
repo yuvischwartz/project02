@@ -33,7 +33,34 @@ Base Styles
 ****************************
 ***************************/
 
+.nav_list{
+display: flex;
+justify-content: flex-end;
+justify-content: center;
+}
 
+.logo{
+list-style: none;
+margin-right: auto;
+font-weight: 700;
+font-size:30px;
+font-family: 'Fredoka One', cursive, Courier, monospace;
+}
+
+#logo_change_of_font{
+    font-size:20px;
+    font-family:'Poiret One', cursive, Courier, monospace;  
+}
+
+.nav_item{
+list-style: none;
+margin-right: 2rem;
+}
+
+a{
+text-decoration: none;
+color:white;
+}
 
 /***************************
 ****************************
@@ -48,18 +75,41 @@ body{
     display: grid; 
     height: 100vh;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: 20vh 40vh 10vh 10vh 10vh 10vh;
-    grid-gap: 0.2rem 0;
+    grid-template-rows: 15vh 45vh 10vh 10vh 10vh 10vh;
+    grid-gap: 0.3rem;
+    /*font-family: 'Kufman', Courier, monospace;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;*/
+    text-align: center;
 }
 
 nav{
-    background-color: #08f7fe;
+    background-color: black;
+    grid-column:2/6;
+    grid-row:1/2;
+    border-radius:5px;
+    padding-top:5px;
 }
 
 main{
     background-color:#09fbd3;
+    grid-column: 1/7;
+    grid-row: 2/3;
+    border-radius:5px;
+    padding-top:5px;
 
 }
 #result{
-    background-color:#fe53bb;
+    background-color:black;
+    grid-column: 1/7;
+    grid-row: 3/7;
+    border-radius:3px;
+    padding-top:10px;
+}
+
+/*Mobile Devices*/
+
+@media only screen and (max-width: 550px){
+
 }

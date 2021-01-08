@@ -42,7 +42,7 @@ justify-content: center;
 .logo{
 list-style: none;
 margin-right: auto;
-font-weight: 700;
+margin-left: 2rem;
 font-size:30px;
 font-family: 'Fredoka One', cursive, Courier, monospace;
 }
@@ -75,7 +75,7 @@ body{
     display: grid; 
     height: 100vh;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: 15vh 45vh 10vh 10vh 10vh 10vh;
+    grid-template-rows: 10vh 50vh 10vh 10vh 10vh 10vh;
     grid-gap: 0.3rem;
     /*font-family: 'Kufman', Courier, monospace;
     font-weight: 400;

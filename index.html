@@ -21,21 +21,26 @@
 
 <body>
     <div class='container'>
+
         <nav>
-            <button class='btn_toggle_menu'><i class="fas fa-bars"></i></button>
+            <button class='btn_toggle_menu btn_primary'><i class="fas fa-bars"></i></button>
             <ul class='nav_list'>
                 <li class='logo'><a href="index.html">GIPHY <i id='logo_change_of_font'>Search API</i></a></li>
-                <li class='nav_item'><a href="#"><button class='btn'>Search</button></a></li>
-                <li class='nav_item'><a href="#"><button class='btn'>About</button></a></li>
-                <li class='nav_item'><a href="#"><button class='btn'>Contact</button></a></li>
+                <li class='nav_item'><a href="#"><button class='btn btn_primary'>Search</button></a></li>
+                <li class='nav_item'><a href="#"><button class='btn btn_primary'>About</button></a></li>
+                <li class='nav_item'><a href="#"><button class='btn btn_primary'>Contact</button></a></li>
             </ul>
         </nav>
+
         <main>
-            <div class='search-box'>
-            <input id='search-input' placeholder="Search Your Gif"/>
-            <button id ='search-gifs-button'><i class="fas fa-search"></i></button>
+            <div class='searchbar-wrapper'>  
+                <div class='searchbar'>
+                    <input id='search-input' placeholder="Search Your Gif"/>
+                    <button id ='search-gifs-button btn_primary'><i class="fas fa-search"></i></button>
+                </div>
             </div>
         </main>
+
         <div id='result'>
             
             

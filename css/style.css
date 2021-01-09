@@ -45,11 +45,13 @@ margin-right: auto;
 margin-left: 2rem;
 font-size:30px;
 font-family: 'Fredoka One', cursive, Courier, monospace;
+
 }
 
 #logo_change_of_font{
     font-size:20px;
-    font-family:'Poiret One', cursive, Courier, monospace;  
+    font-family:'Poiret One', cursive, Courier, monospace; 
+
 }
 
 .nav_item{
@@ -60,6 +62,38 @@ margin-right: 2rem;
 a{
 text-decoration: none;
 color:white;
+}
+
+.btn{
+    font-family:'Poiret One', cursive, Courier, monospace; 
+    font-size:1rem;
+    background-color:#fe53bb;
+    padding: 0.8rem 1rem;
+    border: none;
+    outline: none;
+    color:white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #fa33ab;
+}
+
+.btn_toggle_menu{
+    background-color:#fe53bb;
+    color:white;
+    font-size:1rem;
+    position: absolute;
+    top: 15px;
+    right:15px;
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+btn_toggle_menu:hover{
+    background-color: #fa33ab;
 }
 
 /***************************
@@ -107,9 +141,68 @@ main{
     border-radius:3px;
     padding-top:10px;
 }
+/***************************
+****************************
+Screen Compatibility
+****************************
+***************************/
 
-/*Mobile Devices*/
-
-@media only screen and (max-width: 550px){
-
+/*Desktops*/
+@media only screen and (min-width: 576px){
+    .btn_toggle_menu{
+        display:none;
+    }
 }
+/*Mobile Devices*/
+@media only screen and (max-width: 576px){
+.nav_item{
+    display:none;
+}
+.container{
+    display: grid; 
+    height: 100vh;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 10vh 40vh 10vh 10vh 10vh 10vh;
+    grid-gap: 0.3rem;
+    text-align: center;
+}
+}
+
+/*small Devices*/
+@media only screen and (max-width: 1024px) and (min-width: 576px)
+{
+    .container{
+        display: grid; 
+        height: 100vh;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: 10vh 50vh 10vh 10vh 10vh 10vh;
+        grid-gap: 0.3rem;
+        text-align: center;
+    }
+    nav{
+        background-color: black;
+        grid-column:1/7;
+        grid-row:1/2;
+        border-radius:5px;
+        padding-top:5px;
+    }
+}
+/*
+@media only screen and (max-width: 1024px) and (min-width: 786px)
+{
+    .container{
+        display: grid; 
+        height: 100vh;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: 10vh 50vh 10vh 10vh 10vh 10vh;
+        grid-gap: 0.3rem;
+        text-align: center;
+    }
+    nav{
+        background-color: black;
+        grid-column:1/7;
+        grid-row:1/2;
+        border-radius:5px;
+        padding-top:5px;
+    }
+}*/

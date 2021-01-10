@@ -11,8 +11,8 @@ $( document ).ready(function() {
             console.log(data);
             let html = ""; 
             for(let img of data.data){
-                console.log(img.images.original.url);
-                let str = `<img src=${img.images.original.url} />`;
+                console.log(img.images.fixed_height_downsampled.url);
+                let str = `<img src=${img.images.fixed_height_downsampled.url} />`;
                 html = html + str;
             }
             console.log(html);

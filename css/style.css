@@ -182,7 +182,7 @@ Screen Compatibility
 X-Small devices (mobile phones, less than 576px)
 *******/
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 550px){
 .nav_item{
     display:none;
 }
@@ -204,7 +204,7 @@ X-Small devices (mobile phones, less than 576px)
 // Small devices upto Medium devices
 ******/
 
-@media only screen and (max-width: 1024px) and (min-width: 576px)
+@media only screen and (max-width: 1024px) and (min-width: 550px)
 {
     .container{
         display: grid; 
@@ -227,7 +227,7 @@ X-Small devices (mobile phones, less than 576px)
 // Large devices - Desktops
 ******/
 
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 550px){
     .btn_toggle_menu{
         display:none;
     }

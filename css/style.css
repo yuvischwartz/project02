@@ -182,7 +182,17 @@ Screen Compatibility
 X-Small devices (mobile phones, less than 576px)
 *******/
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 576px){
+nav{
+    grid-column:1/7;
+}
+.logo{
+    font-size:25px;
+    }
+    
+#logo_change_of_font{
+        font-size:15px;
+    }
 .nav_item{
     display:none;
 }
@@ -196,6 +206,10 @@ X-Small devices (mobile phones, less than 576px)
 }
 #search-input{
     width: 50%;
+    font-size: 0.9rem;
+}
+#search-gifs-button{
+    font-size: 0.9rem;
 }
 }
 
@@ -204,7 +218,7 @@ X-Small devices (mobile phones, less than 576px)
 // Small devices upto Medium devices
 ******/
 
-@media only screen and (max-width: 1024px) and (min-width: 550px)
+@media only screen and (max-width: 1024px) and (min-width: 576px)
 {
     .container{
         display: grid; 
@@ -221,13 +235,20 @@ X-Small devices (mobile phones, less than 576px)
         border-radius:5px;
         padding-top:5px;
     }
+    .logo{
+        font-size:25px;
+        }
+        
+    #logo_change_of_font{
+            font-size:15px;
+        }
 }
 
 /******
 // Large devices - Desktops
 ******/
 
-@media only screen and (min-width: 550px){
+@media only screen and (min-width: 576px){
     .btn_toggle_menu{
         display:none;
     }

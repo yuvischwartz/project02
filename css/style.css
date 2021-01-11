@@ -144,14 +144,23 @@ main{
     align-items: center;
 }
 #gifs-box{
-    grid-column: 1/7;
+    grid-column: 2/6;
     grid-row: 3/7; 
 }
 
 #result{
-   /**/
+display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-evenly;
+  margin: 1em;
 }
 
+#result img {
+  width: 200px;
+  height: 200px;
+  padding: 1em;
+  border: 10px solid #fe53bb;
+}
 /***SEARCH BAR LAYOUT***/
 
 .searchbar-wrapper{
@@ -198,6 +207,18 @@ X-Small devices (mobile phones, less than 576px)
     .nav_item{
         display:none;
     }
+    #result{
+        display: grid;
+          grid-template-columns: 1fr;
+          justify-content: space-evenly;
+          margin: 0.5em;
+        }
+        
+        #result img {
+          width: 450px;
+          height: 450px;
+          padding: 0.5em;
+        }
     /*sizes changes*/
     .logo{
         font-size:25px;

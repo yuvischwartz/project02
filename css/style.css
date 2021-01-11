@@ -267,10 +267,6 @@ X-Small devices (mobile phones, less than 576px)
     #logo_change_of_font{
             font-size:15px;
         }
-    /*#result{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-         }*/
 }
 
 /******

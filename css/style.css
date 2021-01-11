@@ -171,6 +171,7 @@ main{
 
 
 
+
 /***************************
 ****************************
 Screen Compatibility
@@ -183,35 +184,35 @@ X-Small devices (mobile phones, less than 576px)
 *******/
 
 @media only screen and (max-width: 576px){
-nav{
-    grid-column:1/7;
-}
-.logo{
-    font-size:25px;
+    .container{
+        display: grid; 
+        height: 100vh;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: 10vh 40vh 10vh 10vh 10vh 10vh;
+        grid-gap: 0.3rem;
+        text-align: center;
     }
-    
-#logo_change_of_font{
+    nav{
+        grid-column:1/7;
+    }
+    .nav_item{
+        display:none;
+    }
+    /*sizes changes*/
+    .logo{
+        font-size:25px;
+    }
+    #logo_change_of_font{
         font-size:15px;
     }
-.nav_item{
-    display:none;
-}
-.container{
-    display: grid; 
-    height: 100vh;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: 10vh 40vh 10vh 10vh 10vh 10vh;
-    grid-gap: 0.3rem;
-    text-align: center;
-}
-#search-input{
-    width: 50%;
-    font-size: 0.9rem;
-}
-#search-gifs-button{
-    font-size: 0.9rem;
-}
-}
+    #search-input{
+        width: 50%;
+        font-size: 0.9rem;
+    }
+    #search-gifs-button{
+        font-size: 0.9rem;
+    }
+    }
 
 
 /******
@@ -242,6 +243,10 @@ nav{
     #logo_change_of_font{
             font-size:15px;
         }
+    /*#result{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+         }*/
 }
 
 /******
@@ -254,32 +259,3 @@ nav{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-/*
-@media only screen and (max-width: 1024px) and (min-width: 786px)
-{
-    .container{
-        display: grid; 
-        height: 100vh;
-        grid-template-columns: repeat(6,1fr);
-        grid-template-rows: 10vh 50vh 10vh 10vh 10vh 10vh;
-        grid-gap: 0.3rem;
-        text-align: center;
-    }
-    nav{
-        background-color: black;
-        grid-column:1/7;
-        grid-row:1/2;
-        border-radius:5px;
-        padding-top:5px;
-    }
-}*/

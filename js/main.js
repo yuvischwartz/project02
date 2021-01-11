@@ -17,6 +17,7 @@ $( document ).ready(function() {
             }
             console.log(html);
             $('#result').html(html);
+    
         });
     };
 
@@ -25,6 +26,11 @@ $( document ).ready(function() {
         let searchQuery = $('#search-input').val();
         console.log('searchQuery is:',searchQuery);
         fetchGifs(searchQuery);
+      });
+
+      $('.btn_toggle_menu').on('click', function(){
+        console.log('toggle menu was pressed');
+
       });
 
     });

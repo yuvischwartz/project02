@@ -15,6 +15,6 @@ and displays images on the page from that response
 ( .html , .css , .javascript , .jQuery )
 
 * Ideas for future improvement (minimum of 3)
--
--
--
+- Active the search button with the Enter key
+- Active the toggle button for the mobile view 
+- Create an animation background

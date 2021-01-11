@@ -29,10 +29,34 @@ $( document ).ready(function() {
       });
 
       /*
-      $('.btn_toggle_menu').on('click', function(){
-        console.log('toggle menu was pressed');
+      /*
+      Way of changing the border color (I couldnt get it to work)
+      ): 
+      let html = ""; 
+      let style = border: 10px solid #fe53bb //pink
+      for(let img of data.data){
+      console.log(img.images.fixed_height_downsampled.url);
+      if(style == "border: 10px solid #fe53bb")
+                {
+                  style= "border: 10px solid #f5d300"; //to yellow
+                  let str = `<img src=${img.images.fixed_height_downsampled.url} style=${style}/>`;
+                  html = html + str;
+                }
+                else if(style == "border: 10px solid #f5d300"){ //yellow
+                  style= "border: 10px solid #08f7fe"; //to blue
+                  let str = `<img src=${img.images.fixed_height_downsampled.url} style=${style}/>`;
+                  html = html + str;
+                }
+                else { //blue
+                  style= "border: 10px solid #fe53bb"; //to pink
+                  let str = `<img src=${img.images.fixed_height_downsampled.url} style=${style}/>`;
+                  html = html + str;
+                }
+     }
+              console.log(html);
+            $('#result').html(html);
+                */
 
-      });*/
 
     });
 

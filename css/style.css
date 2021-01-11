@@ -207,6 +207,9 @@ X-Small devices (mobile phones, less than 576px)
     .nav_item{
         display:none;
     }
+    .mobile_view_navbar{
+        display: none;
+    }
     #result{
         display: grid;
           grid-template-columns: 1fr;
@@ -214,7 +217,7 @@ X-Small devices (mobile phones, less than 576px)
           margin: 0.5em;
         }
         
-        #result img {
+    #result img {
           width: 450px;
           height: 450px;
           padding: 0.5em;
@@ -278,5 +281,8 @@ X-Small devices (mobile phones, less than 576px)
     .btn_toggle_menu{
         display:none;
     }
+    .mobile_view_navbar{
+    display:none;
+}
 }
 

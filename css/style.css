@@ -218,8 +218,8 @@ X-Small devices (mobile phones, less than 576px)
         }
         
     #result img {
-          width: 450px;
-          height: 450px;
+          width: 250px;
+          height: 250px;
           padding: 0.5em;
         }
     /*sizes changes*/

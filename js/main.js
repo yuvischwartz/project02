@@ -30,8 +30,8 @@ $( document ).ready(function() {
 
       /*
       /*
-      Way of changing the border color (I couldnt get it to work)
-      ): 
+      A way of changing the border color:
+       
       let html = ""; 
       let style = border: 10px solid #fe53bb //pink
       for(let img of data.data){

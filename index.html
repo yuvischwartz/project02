@@ -23,22 +23,23 @@
     <div class='container'>
 
         <nav>
-            <button class='btn_toggle_menu btn_primary'><i class="fas fa-bars"></i></button>
+            <!--<button class='btn_toggle_menu btn_primary'><i class="fas fa-bars"></i></button>-->
             <ul class='nav_list'>
                 <li class='logo'><a href="index.html">GIPHY<i id='logo_change_of_font'>Search API</i></a></li>
-                <li class='nav_item item1'><a href="#"><button class='btn btn_primary'>Search</button></a></li>
-                <li class='nav_item item2'><a href="#"><button class='btn btn_primary'>About</button></a></li>
-                <li class='nav_item item3'><a href="#"><button class='btn btn_primary'>Contact</button></a></li>
+                <li class='nav_item'><a href="index.html"><button class='btn btn_primary'>Search</button></a></li>
+                <li class='nav_item'><a href="index.html"><button class='btn btn_primary'>About</button></a></li>
+                <li class='nav_item'><a href="index.html"><button class='btn btn_primary'>Contact</button></a></li>
+            </ul>
+
+            <!--I tried to active it with the toggle button-->
+            <!--menu for mobile view-->
+            <ul class='mobile_nav_list'>
+                <li class='mobile_nav_item'><a href="index.html"><button class='btn btn_primary'>Search</button></a></li>
+                <li class='mobile_nav_item'><a href="index.html"><button class='btn btn_primary'>About</button></a></li>
+                <li class='mobile_nav_item'><a href="index.html"><button class='btn btn_primary'>Contact</button></a></li>   
             </ul>
         </nav>
-        <!--tried to active it with the toggle button-->
-        <div class="mobile_view_navbar">
-            <ul class='mobile_nav_list'>
-                <li class='mobile_nav_item item1'><a href="#"><button class='btn btn_primary'>Search</button></a></li>
-                <li class='mobile_nav_item item2'><a href="#"><button class='btn btn_primary'>About</button></a></li>
-                <li class='mobile_nav_item item3'><a href="#"><button class='btn btn_primary'>Contact</button></a></li>
-            </ul>
-        </div>
+       
         <main>
             <div class='searchbar-wrapper'>  
                 <div class='searchbar'>
@@ -50,7 +51,7 @@
 
         <div id='gifs-box'>
             <div id='result'>
-              
+              <!--API results-->
             </div>
         </div>
 
